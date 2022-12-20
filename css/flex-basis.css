@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 100px;
+}
+
+.container {
+  border: 5px solid red;
+  background-color: silver;
+  width: 1010px;
+  display: flex;
+}
+
+[class*="group"] {
+  height: 250px;
+}
+
+.group1 {
+  background-color: gold;
+  /* flex-basis: 500px; */
+  /* = width: auto */
+  flex: 0 1 100px;
+}
+.group2 {
+  background-color: aqua;
+  flex: 0 1 100px;
+  /* grow shrink basis */
+}
+.group3 {
+  background-color: lightgreen;
+  flex: 0 1 100px;
+}
+
+.box {
+  border: 5px solid red;
+  margin-top: 50px;
+  width: 1000px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 50px;
+}
+
+.box-inner {
+  border: 5px solid blue;
+  flex: 1 1 200px;
+}
